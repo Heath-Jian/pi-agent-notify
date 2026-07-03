@@ -1,0 +1,29 @@
+{
+  "name": "pi-agent-notify",
+  "version": "0.6.3",
+  "description": "Pi extension that sends host terminal or desktop notifications when an agent run finishes or fails.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "notification",
+    "notify",
+    "agent"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "extensions",
+    "scripts/pi-agent-notify-helper.swift",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
