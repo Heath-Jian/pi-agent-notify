@@ -8,9 +8,24 @@
     "pi-coding-agent",
     "notification",
     "notify",
-    "agent"
+    "agent",
+    "desktop-notifications",
+    "terminal",
+    "zap",
+    "macos",
+    "windows",
+    "linux"
   ],
+  "homepage": "https://github.com/Heath-Jian/pi-agent-notify#readme",
+  "bugs": {
+    "url": "https://github.com/Heath-Jian/pi-agent-notify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heath-Jian/pi-agent-notify.git"
+  },
   "license": "MIT",
+  "author": "Heath He",
   "type": "module",
   "files": [
     "extensions",
@@ -25,5 +40,8 @@
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
