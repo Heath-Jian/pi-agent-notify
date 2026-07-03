@@ -27,6 +27,18 @@
   "license": "MIT",
   "author": "Heath He",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "scripts": {
+    "pack:check": "npm pack --dry-run",
+    "publish:public": "npm publish --access public"
+  },
   "files": [
     "extensions",
     "scripts/pi-agent-notify-helper.swift",
@@ -42,6 +54,7 @@
     "@earendil-works/pi-coding-agent": "*"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
