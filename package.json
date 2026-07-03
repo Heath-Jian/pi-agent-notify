@@ -41,7 +41,6 @@
   },
   "files": [
     "extensions",
-    "scripts/pi-agent-notify-helper.swift",
     "README.md",
     "LICENSE"
   ],
