@@ -121,37 +121,6 @@ Installing `terminal-notifier` can allow alternate sender behavior on some macOS
 brew install terminal-notifier
 ```
 
-## npm Package Compatibility
-
-This package is designed to be installed by Pi from npm. It is not a general-purpose Node.js library and does not expose a JavaScript import API.
-
-The npm package intentionally ships only:
-
-- `extensions/`
-- `scripts/pi-agent-notify-helper.swift`
-- `README.md`
-- `LICENSE`
-- `package.json`
-
-Check package contents:
-
-```bash
-npm run pack:check
-```
-
-Publish as an unscoped public npm package:
-
-```bash
-npm login
-npm run publish:public
-```
-
-If your npm account has 2FA enabled, publish with the one-time password from your authenticator app:
-
-```bash
-npm publish --access public --otp=123456
-```
-
 ## License
 
 MIT
@@ -273,37 +242,6 @@ terminal protocol -> native/system -> bell
 
 ```bash
 brew install terminal-notifier
-```
-
-## npm 包兼容说明
-
-这个包是给 Pi 从 npm 安装的扩展包，不是通用 Node.js 库，也不暴露 JavaScript import API。
-
-npm 包中只发布这些内容：
-
-- `extensions/`
-- `scripts/pi-agent-notify-helper.swift`
-- `README.md`
-- `LICENSE`
-- `package.json`
-
-检查 npm 包内容：
-
-```bash
-npm run pack:check
-```
-
-作为 unscoped public npm package 发布：
-
-```bash
-npm login
-npm run publish:public
-```
-
-如果你的 npm 账号开启了 2FA，发布时需要带身份验证器中的一次性验证码：
-
-```bash
-npm publish --access public --otp=123456
 ```
 
 ## 许可证
